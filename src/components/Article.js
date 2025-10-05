@@ -3,17 +3,21 @@
 //height of the grey part is 192.29px
 import React from "react";
 import "./Articles.css";
-const Article = ({ title, author, linkTo }) => {
+const Article = ({ title, author, linkTo, image }) => {
   const handleClick = () => {
     window.open(linkTo, "_blank", "noopener,noreferrer");
   };
+
   return (
     <div
       className="article-background"
       onClick={handleClick}
       style={{ cursor: linkTo ? "pointer" : "default" }}
     >
-      <div className="article-image"></div>
+      <div
+        className="article-image"
+        style={{ backgroundImage: image ? `url(${image})` : undefined }}
+      ></div>
       <div className="article-content">
         <h3 className="article-title">{title}</h3>
         <p className="article-author">By {author}</p>

@@ -8,21 +8,25 @@ const Section = () => {
       title: "Article Title However Long It May Be, I Wouldn't Know",
       author: "First Last",
       articleLink: "https://www.columbiaspectator.com/",
+      image: "",
     },
     {
       title: "Article Title However Long It May Be, I Wouldn't Know",
       author: "First Last",
       articleLink: "https://www.columbiaspectator.com/",
+      image: "",
     },
     {
       title: "Article Title However Long It May Be, I Wouldn't Know",
       author: "First Last",
       articleLink: "https://www.columbiaspectator.com/",
+      image: "",
     },
     {
       title: "Article Title However Long It May Be, I Wouldn't Know",
       author: "First Last",
       articleLink: "https://www.columbiaspectator.com/",
+      image: "",
     },
   ];
   return (

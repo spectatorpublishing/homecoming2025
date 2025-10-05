@@ -9,9 +9,13 @@
   overflow: hidden;
 }
 
+.article-background:hover {
+  transform: translateY(+5px);
+}
 .article-image {
   height: 62.43%;
   background: #c4c4c4;
+  background-size: cover;
 }
 
 .article-content {

@@ -14,6 +14,7 @@ const ArticleContainer = ({ sectionTitle, articles, start = 0, end }) => {
             title={a.title}
             author={a.author}
             linkTo={a.articleLink}
+            image={a.image}
           />
         ))}
       </div>
