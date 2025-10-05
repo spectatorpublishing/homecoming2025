@@ -1,14 +1,10 @@
-import logo from './logo.svg';
-import './App.css';
+import "./pages/StaffCredits.css";  
+import StaffCredits from "./pages/StaffCredits";
 
-function App() {
+export default function App() {
   return (
     <div className="App">
-      <header className="App-header">
-
-      </header>
+      <StaffCredits />
     </div>
   );
 }
-
-export default App;
