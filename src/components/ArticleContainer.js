@@ -1,9 +1,9 @@
-import React from "react";
+//container that holds a section of articles
 import "./Articles.css";
 import Article from "./Article";
 
 const ArticleContainer = ({ sectionTitle, articles, start = 0, end }) => {
-  const displayedArticles = articles.slice(start, end);
+  const displayedArticles = articles.slice(start, end); //slice the articles array to get the correct article indexes to display for a certain section
   return (
     <div className="article-container">
       <h2 className="section-title">{sectionTitle}</h2>

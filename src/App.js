@@ -6,7 +6,8 @@ import "./App.css";
 function App() {
   return (
     <Routes>
-      <Route path="/" element={<Section />} />
+      {/* Change this to the actual route name later */}
+      <Route path="/" element={<Section />} />{" "}
     </Routes>
   );
 }

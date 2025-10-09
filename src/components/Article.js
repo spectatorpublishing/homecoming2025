@@ -1,7 +1,5 @@
-//box width is 368 px, 308 px height 10 px curve radius for corner
-//the wdith of the whole container is 1204 px
-//height of the grey part is 192.29px
-import React from "react";
+//actual block that displays an article's preview, title, and author. Can be clicked to redirect to a full article.
+
 import "./Articles.css";
 const Article = ({ title, author, linkTo, image }) => {
   const handleClick = () => {
@@ -10,7 +8,7 @@ const Article = ({ title, author, linkTo, image }) => {
 
   return (
     <div
-      className="article-background"
+      className="article-background" // can click anywhere on the article block to be redirected to the corresponding article
       onClick={handleClick}
       style={{ cursor: linkTo ? "pointer" : "default" }}
     >

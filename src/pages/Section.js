@@ -1,8 +1,10 @@
-import React from "react";
+//section page that has multiple sections for articles
+
 import "./Section.css";
 import ArticleContainer from "../components/ArticleContainer";
 
 const Section = () => {
+  //placeholder article data - replace with actual data later
   const articlesMap = [
     {
       title: "Article Title However Long It May Be, I Wouldn't Know",
