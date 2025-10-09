@@ -2,14 +2,20 @@ import React from "react";
 import { Routes, Route } from "react-router-dom";
 import Section from "./pages/Section";
 import "./App.css";
+import logo from './logo.svg';
+import './App.css';
+import NavBar from "./components/NavBar";
+import "./pages/StaffCredits.css";  
+import StaffCredits from "./pages/StaffCredits";
 
-function App() {
+export default function App() {
   return (
-    <Routes>
-      {/* Change this to the actual route name later */}
-      <Route path="/" element={<Section />} />{" "}
-    </Routes>
+    <div className="App">
+      <header className="App-header">
+        <NavBar />
+      </header>
+      <Section />
+      <StaffCredits />
+    </div>
   );
 }
-
-export default App;
