@@ -1,0 +1,80 @@
+@import url("https://fonts.googleapis.com/css2?family=Bitter:ital,wght@0,400;0,700;1,400&display=swap");
+
+:root{
+  --sc-blue:#214ECF;
+  --sc-stroke:5.32px;
+  --card-width: 340px; 
+}
+
+* { box-sizing: border-box; }
+
+.sc-page{ min-height:100vh; background:#f5f7ff; display:flex; justify-content:center; }
+.sc-container{ max-width:1120px; width:100%; padding:48px 16px; }
+
+.sc-title{
+  font-family:"Bitter",serif;
+  text-align:center;
+  color:var(--sc-blue);
+  font-weight:700;
+  font-size:clamp(42px,6vw,80px);
+  line-height:1;
+  margin:0 0 28px;
+  text-transform:uppercase;
+}
+
+.sc-grid{
+  display:grid;
+  gap:24px;
+  margin-top:8px;
+  justify-content:center; 
+}
+
+.sc-grid--3-or-1{
+  grid-template-columns: repeat(3, var(--card-width));
+}
+
+@media (max-width: 1199px){
+  .sc-grid--3-or-1{
+    grid-template-columns: var(--card-width);
+  }
+}
+
+.sc-col{
+  display:flex;
+  flex-direction:column;
+  gap:24px;
+  min-width:0;
+}
+
+.sc-card{
+  border:var(--sc-stroke) solid var(--sc-blue);
+  border-radius:0;
+  background:#fff;
+  padding:16px 18px;
+  width:var(--card-width); 
+}
+
+.sc-sec-name{
+  font-family:"Bitter",serif;
+  color:var(--sc-blue);
+  font-weight:700;
+  font-size:21.28px;
+  line-height:1;
+  margin:0 0 10px;
+}
+
+.sc-list{ list-style:none; margin:0; padding:0; }
+.sc-row{
+  font-family:"Bitter",serif;
+  font-weight:400;
+  font-size:17.03px;
+  line-height:24.48px;
+  color:var(--sc-blue);
+}
+.sc-name{ font-weight:400; }
+.sc-role{
+  font-style:italic;
+  font-weight:400;
+  font-size:17.03px;
+  line-height:24.48px;
+}
