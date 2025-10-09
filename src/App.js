@@ -1,3 +1,7 @@
+import React from "react";
+import { Routes, Route } from "react-router-dom";
+import Section from "./pages/Section";
+import "./App.css";
 import logo from './logo.svg';
 import './App.css';
 import NavBar from "./components/NavBar";
@@ -10,6 +14,7 @@ export default function App() {
       <header className="App-header">
         <NavBar />
       </header>
+      <Section />
       <StaffCredits />
     </div>
   );
