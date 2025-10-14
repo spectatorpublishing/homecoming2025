@@ -14,14 +14,19 @@ const ButtonWrapper = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
+
+  &:hover img {
+    display: block;
+  }
 `;
 
 const Button = styled.button`
-  padding: 0.7rem 1.5rem;
+  display: flex;
+  padding: 0.7rem 2rem;
   border-radius: 4px;
   cursor: pointer;
-  transition: all 0.2s ease-in-out;
   border: none;
+  flex-shrink: 0;
 
   font-family: 'Outfit', sans-serif;
   font-weight: ${(props) => (props.primary ? "600" : "400")};
@@ -31,6 +36,8 @@ const Button = styled.button`
 
 const InsideIcon = styled.img`
   width: 80px;
+  margin-right: 10px;
+  margin-left: 10px;
 `;
 
 const OutsideIcon = styled.img`
@@ -38,18 +45,24 @@ const OutsideIcon = styled.img`
   margin-top: 20px;
 `;
 
-const ButtonIcon = styled.img`
+const HoverIcon = styled.img`
   position: absolute;
   bottom: 125%;
   width: 25px;
   display: none;
-
-  ${ButtonWrapper}:hover & {
-    display: block;
-  }
 `;
 
 const NavBar = () => {
+
+  const sections = [
+    { id: "home", label: "Home", primary: true },
+    { id: "section1", label: "Section 1" },
+    { id: "section2", label: "Section 2" },
+    { id: "section3", label: "Section 3" },
+    { id: "section4", label: "Section 4" },
+    // dynamic rendering, add whatever sections needed here
+  ];
+  
   const handleScroll = (id) => {
     const element = document.getElementById(id);
     if (element) {
@@ -61,36 +74,16 @@ const NavBar = () => {
     <Wrapper>
       <OutsideIcon src="/fball-player.svg" alt="football icon" />
       <InsideIcon src="/fball-player.svg" alt="football icon" />
-      <ButtonWrapper>
-        <Button primary onClick={() => handleScroll("home")}>
-          Home
-        </Button>
-      </ButtonWrapper>
-
-      <ButtonWrapper>
-        <ButtonIcon src="/fball.svg" alt="football icon" />
-        <Button onClick={() => handleScroll("section1")}>
-          Section
-        </Button>
-      </ButtonWrapper>
-      <ButtonWrapper>
-        <ButtonIcon src="/fball.svg" alt="football icon" />
-        <Button onClick={() => handleScroll("section2")}>
-          Section
-        </Button>
-      </ButtonWrapper>
-      <ButtonWrapper>
-        <ButtonIcon src="/fball.svg" alt="football icon" />
-        <Button onClick={() => handleScroll("section3")}>
-          Section
-        </Button>
-      </ButtonWrapper>
-      <ButtonWrapper>
-        <ButtonIcon src="/fball.svg" alt="football icon" />
-        <Button onClick={() => handleScroll("section4")}>
-          Section
-        </Button>
-      </ButtonWrapper>
+      
+      {sections.map(({ id, label, primary }) => (
+        <ButtonWrapper key={id}>
+          {!primary && <HoverIcon src="/fball.svg" alt="football icon" />}
+          <Button primary={primary} onClick={() => handleScroll(id)}>
+            {label}
+          </Button>
+        </ButtonWrapper>
+      ))}
+      
       <InsideIcon src="/fball-player.svg" alt="football icon" />
       <OutsideIcon src="/fball-player.svg" alt="football icon" />
     </Wrapper>
