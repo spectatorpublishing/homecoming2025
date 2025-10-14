@@ -33,19 +33,41 @@ const Section = () => {
   ];
   return (
     <div className="section-page">
-      <ArticleContainer
-        sectionTitle="SECTION"
-        articles={articlesMap}
-        start={0}
-        end={3}
-      />
+      <section id="section1">
+        <ArticleContainer
+          sectionTitle="SECTION"
+          articles={articlesMap}
+          start={0}
+          end={3}
+        />
+      </section>
 
-      <ArticleContainer
-        sectionTitle="SECTION"
-        articles={articlesMap}
-        start={0}
-        end={4}
-      />
+      <section id="section2">
+        <ArticleContainer
+          sectionTitle="SECTION"
+          articles={articlesMap}
+          start={1}
+          end={4}
+        />
+      </section>
+
+      <section id="section3">
+        <ArticleContainer
+          sectionTitle="SECTION"
+          articles={articlesMap}
+          start={0}
+          end={4}
+        />
+      </section>
+
+      <section id="section4">
+        <ArticleContainer
+          sectionTitle="SECTION"
+          articles={articlesMap}
+          start={0}
+          end={4}
+        />
+      </section>
     </div>
   );
 };
