@@ -7,6 +7,19 @@ const Wrapper = styled.nav`
   justify-content: center;
   align-items: center;
   gap: 1rem;
+  flex-wrap: nowrap;
+  padding-bottom: 1.5rem;
+`;
+
+const HoverIcon = styled.img`
+  position: absolute;
+  bottom: 125%;
+  width: 25px;
+  display: none;
+
+  @media (max-width: 1000px) {
+    display: none;
+  }
 `;
 
 const ButtonWrapper = styled.div`
@@ -14,10 +27,26 @@ const ButtonWrapper = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
+  flex-shrink: 0;
 
-  &:hover img {
+  &:hover ${HoverIcon} {
     display: block;
   }
+
+  @media (max-width: 1000px) {
+    &:hover ${HoverIcon} {
+      display: none;
+    }
+  }
+`;
+
+const ButtonsContainer = styled.div`
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+  flex: 1 1 auto;
+  min-width: 0;
 `;
 
 const Button = styled.button`
@@ -38,18 +67,21 @@ const InsideIcon = styled.img`
   width: 80px;
   margin-right: 10px;
   margin-left: 10px;
+  flex-shrink: 0;
+
+  @media (max-width: 1000px) {
+    display: none;
+  }
 `;
 
 const OutsideIcon = styled.img`
   width: 75px;
   margin-top: 20px;
-`;
+  flex-shrink: 0;
 
-const HoverIcon = styled.img`
-  position: absolute;
-  bottom: 125%;
-  width: 25px;
-  display: none;
+  @media (max-width: 1000px) {
+    display: none;
+  }
 `;
 
 const NavBar = () => {
@@ -74,16 +106,16 @@ const NavBar = () => {
     <Wrapper>
       <OutsideIcon src="/fball-player.svg" alt="football icon" />
       <InsideIcon src="/fball-player.svg" alt="football icon" />
-      
-      {sections.map(({ id, label, primary }) => (
-        <ButtonWrapper key={id}>
-          {!primary && <HoverIcon src="/fball.svg" alt="football icon" />}
-          <Button primary={primary} onClick={() => handleScroll(id)}>
-            {label}
-          </Button>
-        </ButtonWrapper>
-      ))}
-      
+      <ButtonsContainer>
+        {sections.map(({ id, label, primary }) => (
+          <ButtonWrapper key={id}>
+            {!primary && <HoverIcon src="/fball.svg" alt="football icon" />}
+            <Button primary={primary} onClick={() => handleScroll(id)}>
+              {label}
+            </Button>
+          </ButtonWrapper>
+        ))}
+      </ButtonsContainer>
       <InsideIcon src="/fball-player.svg" alt="football icon" />
       <OutsideIcon src="/fball-player.svg" alt="football icon" />
     </Wrapper>
