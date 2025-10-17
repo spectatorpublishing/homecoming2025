@@ -28,7 +28,7 @@ const Button = styled.button`
   border: none;
   flex-shrink: 0;
 
-  font-family: 'Outfit', sans-serif;
+  font-family: "Outfit", sans-serif;
   font-weight: ${(props) => (props.primary ? "600" : "400")};
   color: ${(props) => (props.primary ? "#FFFFFF" : "#214ECF")};
   background-color: ${(props) => (props.primary ? "#214ECF" : "#FFFFFF")};
