@@ -21,19 +21,17 @@ export default function Letter() {
               As Columbia continues to make its mark on the Ivy League, we’re reminded of the unique power that sports have to unite a community. Whether you’re making the trek up to Baker for the first time or you’re a lifelong Lions fan, we hope this edition puts you in the Homecoming spirit. 
               <br></br><br></br>
               Roar, Lion, Roar,
-              Jillian Prunty and Arielle Rieder 
-              Sports Editors
             </p>
           </div>
 
           <div className="signatures">
             <div className="signature">
-              <div className="signatureName">First Last</div>
-              <div className="signatureRole">Editor in Chief</div>
+              <div className="signatureName">Jillian Prunty</div>
+              <div className="signatureRole">Sports Editors</div>
             </div>
             <div className="signature">
-              <div className="signatureName">First Last</div>
-              <div className="signatureRole">Managing Editor</div>
+              <div className="signatureName">Arielle Rieder</div>
+              <div className="signatureRole">Sports Editors</div>
             </div>
           </div>
         </div>
