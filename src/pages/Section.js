@@ -2,41 +2,19 @@
 
 import "./Section.css";
 import ArticleContainer from "../components/ArticleContainer";
+import acArticles from "../data/acArticles";
+import crosswordsArticles from "../data/crosswordsArticles";
+import spectrumArticles from "../data/spectrumArticles";
+import sportsArticles from "../data/sportsArticles";
+import uniArticles from "../data/uniArticles";
 
 const Section = () => {
-  //placeholder article data - replace with actual data later
-  const articlesMap = [
-    {
-      title: "Article Title However Long It May Be, I Wouldn't Know",
-      author: "First Last",
-      articleLink: "https://www.columbiaspectator.com/",
-      image: "",
-    },
-    {
-      title: "Article Title However Long It May Be, I Wouldn't Know",
-      author: "First Last",
-      articleLink: "https://www.columbiaspectator.com/",
-      image: "",
-    },
-    {
-      title: "Article Title However Long It May Be, I Wouldn't Know",
-      author: "First Last",
-      articleLink: "https://www.columbiaspectator.com/",
-      image: "",
-    },
-    {
-      title: "Article Title However Long It May Be, I Wouldn't Know",
-      author: "First Last",
-      articleLink: "https://www.columbiaspectator.com/",
-      image: "",
-    },
-  ];
   return (
     <div className="section-page">
       <section id="section1">
         <ArticleContainer
-          sectionTitle="SECTION"
-          articles={articlesMap}
+          sectionTitle="University"
+          articles={uniArticles}
           start={0}
           end={3}
         />
@@ -44,17 +22,18 @@ const Section = () => {
 
       <section id="section2">
         <ArticleContainer
-          sectionTitle="SECTION"
-          articles={articlesMap}
-          start={1}
+          sectionTitle="Sports"
+          articles={sportsArticles}
+          start={0}
           end={4}
         />
       </section>
 
       <section id="section3">
         <ArticleContainer
-          sectionTitle="SECTION"
-          articles={articlesMap}
+          sectionTitle="A & C"
+          //articles={ac2Articles}
+          articles={acArticles}
           start={0}
           end={4}
         />
@@ -62,8 +41,17 @@ const Section = () => {
 
       <section id="section4">
         <ArticleContainer
-          sectionTitle="SECTION"
-          articles={articlesMap}
+          sectionTitle="Spectrum"
+          articles={spectrumArticles}
+          start={0}
+          end={4}
+        />
+      </section>
+
+      <section id="section5">
+        <ArticleContainer
+          sectionTitle="Crosswords"
+          articles={crosswordsArticles}
           start={0}
           end={4}
         />
