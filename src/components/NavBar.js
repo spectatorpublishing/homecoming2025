@@ -88,10 +88,13 @@ const NavBar = () => {
 
   const sections = [
     { id: "home", label: "Home", primary: true },
-    { id: "section1", label: "Section 1" },
-    { id: "section2", label: "Section 2" },
-    { id: "section3", label: "Section 3" },
-    { id: "section4", label: "Section 4" },
+    { id: "section1", label: "University" },
+    { id: "section2", label: "Sports" },
+    { id: "section3", label: "A & C" },
+    { id: "section4", label: "Spectrum" },
+    { id: "section5", label: "Crosswords" },
+    { id: "section6", label: "City" },
+    { id: "section7", label: "Video" },
     // dynamic rendering, add whatever sections needed here
   ];
   

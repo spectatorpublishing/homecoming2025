@@ -15,8 +15,10 @@ const ArticleContainer = ({ sectionTitle, articles, start = 0, end }) => {
             author={a.author}
             linkTo={a.articleLink}
             image={a.image}
+            youtubeUrl={a.youtubeUrl}
           />
         ))}
+        {displayedArticles.length === 2 && (<div></div>)}
       </div>
     </div>
   );

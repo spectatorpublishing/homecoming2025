@@ -7,6 +7,8 @@ import crosswordsArticles from "../data/crosswordsArticles";
 import spectrumArticles from "../data/spectrumArticles";
 import sportsArticles from "../data/sportsArticles";
 import uniArticles from "../data/uniArticles";
+import cityArticles from "../data/cityArticles";
+import videoArticles from "../data/videoArticles";
 
 const Section = () => {
   return (
@@ -52,6 +54,24 @@ const Section = () => {
         <ArticleContainer
           sectionTitle="Crosswords"
           articles={crosswordsArticles}
+          start={0}
+          end={4}
+        />
+      </section>
+
+      <section id="section6">
+        <ArticleContainer
+          sectionTitle="City"
+          articles={cityArticles}
+          start={0}
+          end={4}
+        />
+      </section>
+
+      <section id="section7">
+        <ArticleContainer
+          sectionTitle="Video"
+          articles={videoArticles}
           start={0}
           end={4}
         />
