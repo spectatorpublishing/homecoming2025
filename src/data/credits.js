@@ -55,7 +55,9 @@ export const col_2 = {
     { staff_name: "Aishani Srikumar", title: "Engineering Manager" },
     { staff_name: "Violet Laing", title: "Engineering Manager" },
     { staff_name: "Julien Remy", title: "Engineering Manager" },
-    { staff_name: "Annie Dong", title: "Senior Engineering Developer" }
+    { staff_name: "Dhruv Goya", title: "Associate Engineering Developer" },
+    { staff_name: "Amber Li", title: "Associate Engineering Developer" },
+    { staff_name: "Hannah Qi", title: "Associate Engineering Developer" },
   ],
 
   "Sports": [
