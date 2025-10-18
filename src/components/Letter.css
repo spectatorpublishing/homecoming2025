@@ -77,7 +77,7 @@ body {
 
 .picture {
   position: relative;
-  width: min(100%, 548px);
+  width: min(100%, 420px);
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -112,9 +112,13 @@ body {
 
 .image {
   width: 100%;
-  aspect-ratio: 548 / 760;
+  aspect-ratio: 432 / 791;
   height: auto;
   background: #D9D9D9;
+  /*background-image: "url('/Homecomingfinalcover.png')";*/
+  background-image: url("../../public/Homecomingfinalcover.png");
+  background-repeat: no-repeat;
+  background-size: cover;
   display: block;
   flex: 0 0 auto;
   margin: 0 auto;
