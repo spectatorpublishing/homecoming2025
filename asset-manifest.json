@@ -1,16 +1,16 @@
 {
   "files": {
     "main.css": "/static/css/main.255625d6.css",
-    "main.js": "/static/js/main.413a6980.js",
+    "main.js": "/static/js/main.042efd13.js",
     "static/js/453.d70bde74.chunk.js": "/static/js/453.d70bde74.chunk.js",
     "static/media/Homecomingfinalcover.png": "/static/media/Homecomingfinalcover.92a13542977c0da69cf5.png",
     "index.html": "/index.html",
     "main.255625d6.css.map": "/static/css/main.255625d6.css.map",
-    "main.413a6980.js.map": "/static/js/main.413a6980.js.map",
+    "main.042efd13.js.map": "/static/js/main.042efd13.js.map",
     "453.d70bde74.chunk.js.map": "/static/js/453.d70bde74.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.255625d6.css",
-    "static/js/main.413a6980.js"
+    "static/js/main.042efd13.js"
   ]
 }
